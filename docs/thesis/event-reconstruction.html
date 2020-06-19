@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2.3 Event reconstruction | PhD Thesis</title>
+  <meta name="description" content="my thesis" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2.3 Event reconstruction | PhD Thesis" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="my thesis" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2.3 Event reconstruction | PhD Thesis" />
+  
+  <meta name="twitter:description" content="my thesis" />
+  
+
+<meta name="author" content="Irene Crisologo" />
+
+
+<meta name="date" content="2020-06-19" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="radar-data-and-data-processing.html"/>
+<link rel="next" href="conclusions.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Using spaceborne radar platforms to enhance the homogeneity of weather radar calibration</a></li>
+<li class="chapter" data-level="" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="" data-path="zusammenfassung.html"><a href="zusammenfassung.html"><i class="fa fa-check"></i>Zusammenfassung</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="how-weather-radars-work.html"><a href="how-weather-radars-work.html"><i class="fa fa-check"></i><b>1.1</b> How weather radars work</a></li>
+<li class="chapter" data-level="1.2" data-path="the-good-and-the-bad.html"><a href="the-good-and-the-bad.html"><i class="fa fa-check"></i><b>1.2</b> The good and the bad</a></li>
+<li class="chapter" data-level="1.3" data-path="calibration.html"><a href="calibration.html"><i class="fa fa-check"></i><b>1.3</b> Calibration</a></li>
+<li class="chapter" data-level="1.4" data-path="the-need-for-calibrated-radars-in-the-philippines.html"><a href="the-need-for-calibrated-radars-in-the-philippines.html"><i class="fa fa-check"></i><b>1.4</b> The need for (calibrated) radars in the Philippines</a></li>
+<li class="chapter" data-level="1.5" data-path="the-approach.html"><a href="the-approach.html"><i class="fa fa-check"></i><b>1.5</b> The approach</a></li>
+<li class="chapter" data-level="1.6" data-path="research-questions-and-structure.html"><a href="research-questions-and-structure.html"><i class="fa fa-check"></i><b>1.6</b> Research questions and structure</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="paper-1-using-the-new-philippine-radar-network-to-reconstruct-the-habagat-of-august-2012-monsoon-event.html"><a href="paper-1-using-the-new-philippine-radar-network-to-reconstruct-the-habagat-of-august-2012-monsoon-event.html"><i class="fa fa-check"></i><b>2</b> Paper 1: Using the new Philippine radar network to reconstruct the <em>Habagat of August 2012</em> monsoon event</a><ul>
+<li class="chapter" data-level="" data-path="abstract-1.html"><a href="abstract-1.html"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="2.1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2" data-path="radar-data-and-data-processing.html"><a href="radar-data-and-data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Radar data and data processing</a></li>
+<li class="chapter" data-level="2.3" data-path="event-reconstruction.html"><a href="event-reconstruction.html"><i class="fa fa-check"></i><b>2.3</b> Event reconstruction</a></li>
+<li class="chapter" data-level="2.4" data-path="conclusions.html"><a href="conclusions.html"><i class="fa fa-check"></i><b>2.4</b> Conclusions</a></li>
+<li class="chapter" data-level="2.5" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i><b>2.5</b> Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="paper-2-enhancing-the-consistency-of-spaceborne-and-ground-based-radar-comparisons-by-using-beam-blockage-fraction-as-a-quality-filter.html"><a href="paper-2-enhancing-the-consistency-of-spaceborne-and-ground-based-radar-comparisons-by-using-beam-blockage-fraction-as-a-quality-filter.html"><i class="fa fa-check"></i><b>3</b> Paper 2: Enhancing the Consistency of Spaceborne and Ground-Based Radar Comparisons by Using Beam Blockage Fraction as a Quality Filter</a><ul>
+<li class="chapter" data-level="" data-path="abstract-2.html"><a href="abstract-2.html"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="3.1" data-path="introduction-1.html"><a href="introduction-1.html"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>3.2</b> Data</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="data.html"><a href="data.html#subsec:srpr"><i class="fa fa-check"></i><b>3.2.1</b> Spaceborne precipitation radar</a></li>
+<li class="chapter" data-level="3.2.2" data-path="data.html"><a href="data.html#ground-radar"><i class="fa fa-check"></i><b>3.2.2</b> Ground radar</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="method.html"><a href="method.html"><i class="fa fa-check"></i><b>3.3</b> Method</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="method.html"><a href="method.html#sec:partialbeamblocking"><i class="fa fa-check"></i><b>3.3.1</b> Partial beam shielding and quality index based on beam blockage fraction</a></li>
+<li class="chapter" data-level="3.3.2" data-path="method.html"><a href="method.html#subsec:srgrvolumematching"><i class="fa fa-check"></i><b>3.3.2</b> SR–GR Volume Matching</a></li>
+<li class="chapter" data-level="3.3.3" data-path="method.html"><a href="method.html#assessment-of-the-average-reflectivity-bias"><i class="fa fa-check"></i><b>3.3.3</b> Assessment of the average reflectivity bias</a></li>
+<li class="chapter" data-level="3.3.4" data-path="method.html"><a href="method.html#computational-details"><i class="fa fa-check"></i><b>3.3.4</b> Computational details</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="sec-resultsanddiscussion.html"><a href="sec-resultsanddiscussion.html"><i class="fa fa-check"></i><b>3.4</b> Results and discussion</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="sec-resultsanddiscussion.html"><a href="sec-resultsanddiscussion.html#single-event-comparison"><i class="fa fa-check"></i><b>3.4.1</b> Single event comparison</a></li>
+<li class="chapter" data-level="3.4.2" data-path="sec-resultsanddiscussion.html"><a href="sec-resultsanddiscussion.html#overall-junenovember-comparison-during-the-5-year-observation-period"><i class="fa fa-check"></i><b>3.4.2</b> Overall June–November comparison during the 5-year observation period</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="conclusions-1.html"><a href="conclusions-1.html"><i class="fa fa-check"></i><b>3.5</b> Conclusions</a></li>
+<li class="chapter" data-level="" data-path="acknowledgements-1.html"><a href="acknowledgements-1.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="using-ground-radar-overlaps-to-verify-the-retrieval-of-calibration-bias-estimates-from-spaceborne-platforms.html"><a href="using-ground-radar-overlaps-to-verify-the-retrieval-of-calibration-bias-estimates-from-spaceborne-platforms.html"><i class="fa fa-check"></i><b>4</b> Using ground radar overlaps to verify the retrieval of calibration bias estimates from spaceborne platforms</a><ul>
+<li class="chapter" data-level="" data-path="abstract-3.html"><a href="abstract-3.html"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="4.1" data-path="introduction-2.html"><a href="introduction-2.html"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="sec-data-studyarea.html"><a href="sec-data-studyarea.html"><i class="fa fa-check"></i><b>4.2</b> Data and Study Area</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="sec-data-studyarea.html"><a href="sec-data-studyarea.html#subic-radar-sub"><i class="fa fa-check"></i><b>4.2.1</b> Subic radar (SUB)</a></li>
+<li class="chapter" data-level="4.2.2" data-path="sec-data-studyarea.html"><a href="sec-data-studyarea.html#tagaytay-radar-tag"><i class="fa fa-check"></i><b>4.2.2</b> Tagaytay radar (TAG)</a></li>
+<li class="chapter" data-level="4.2.3" data-path="sec-data-studyarea.html"><a href="sec-data-studyarea.html#spaceborne-precipitation-radar"><i class="fa fa-check"></i><b>4.2.3</b> Spaceborne precipitation radar</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="sec-methods.html"><a href="sec-methods.html"><i class="fa fa-check"></i><b>4.3</b> Methods</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="sec-methods.html"><a href="sec-methods.html#subsec:methodoverview"><i class="fa fa-check"></i><b>4.3.1</b> Overview</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="srgr-matching.html"><a href="srgr-matching.html"><i class="fa fa-check"></i><b>4.4</b> SR–GR matching</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="srgr-matching.html"><a href="srgr-matching.html#grgr-matching"><i class="fa fa-check"></i><b>4.4.1</b> GR–GR matching</a></li>
+<li class="chapter" data-level="4.4.2" data-path="srgr-matching.html"><a href="srgr-matching.html#estimation-of-path-integrated-attenuation"><i class="fa fa-check"></i><b>4.4.2</b> Estimation of path-integrated attenuation</a></li>
+<li class="chapter" data-level="4.4.3" data-path="srgr-matching.html"><a href="srgr-matching.html#beam-blockage"><i class="fa fa-check"></i><b>4.4.3</b> Beam Blockage</a></li>
+<li class="chapter" data-level="4.4.4" data-path="srgr-matching.html"><a href="srgr-matching.html#subsec:qualityweighting"><i class="fa fa-check"></i><b>4.4.4</b> Quality index and quality-weighted averaging</a></li>
+<li class="chapter" data-level="4.4.5" data-path="srgr-matching.html"><a href="srgr-matching.html#computational-details-1"><i class="fa fa-check"></i><b>4.4.5</b> Computational details</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="sec-results.html"><a href="sec-results.html"><i class="fa fa-check"></i><b>4.5</b> Results and Discussion</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="sec-results.html"><a href="sec-results.html#subsec:extendingquality"><i class="fa fa-check"></i><b>4.5.1</b> The effect of extended quality filtering: the case of December 9, 2014</a></li>
+<li class="chapter" data-level="4.5.2" data-path="sec-results.html"><a href="sec-results.html#subsec:biasfromoverpass"><i class="fa fa-check"></i><b>4.5.2</b> Estimating the GR calibration bias from SR overpass events</a></li>
+<li class="chapter" data-level="4.5.3" data-path="sec-results.html"><a href="sec-results.html#subsec:effectofbias"><i class="fa fa-check"></i><b>4.5.3</b> The effect of bias correction on the GR consistency: case studies</a></li>
+<li class="chapter" data-level="4.5.4" data-path="sec-results.html"><a href="sec-results.html#subsec:interpolation"><i class="fa fa-check"></i><b>4.5.4</b> Can we interpolate calibration bias estimates in time?</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="acknowledgements-2.html"><a href="acknowledgements-2.html"><i class="fa fa-check"></i><b>4.6</b> Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="discussion-limitations-outlook.html"><a href="discussion-limitations-outlook.html"><i class="fa fa-check"></i><b>5</b> Discussion, Limitations, Outlook</a><ul>
+<li class="chapter" data-level="5.1" data-path="limitations-of-the-study.html"><a href="limitations-of-the-study.html"><i class="fa fa-check"></i><b>5.1</b> Limitations of the study</a></li>
+<li class="chapter" data-level="5.2" data-path="outlook.html"><a href="outlook.html"><i class="fa fa-check"></i><b>5.2</b> Outlook</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="summary-and-conclusion.html"><a href="summary-and-conclusion.html"><i class="fa fa-check"></i><b>6</b> Summary and Conclusion</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">PhD Thesis</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="event-reconstruction" class="section level2">
+<h2><span class="header-section-number">2.3</span> Event reconstruction</h2>
+<p>Figure <a href="event-reconstruction.html#fig:BCfig2">2.2</a> shows the rainfall dynamics in the area of Metropolitan Manila over a period of four days, based on rain gauge recordings. The main portion of rainfall accumulated rather continuously between noon of 6 August and the evening of 7 August. However, significant periods of intermittent, but intense rainfall followed until the early morning of 9 August. Keeping in mind that the distance between the gauges is only around 10 km (Figure @ref(fig:BC_fig1), and that the accumulation period lasted four days, the differences between the rainfall accumulations are quite remarkable. As will be seen later (in Figure <a href="event-reconstruction.html#fig:BCfig4">2.4</a>), this heterogeneity is consistent with the distribution of rainfall inferred from the radar.</p>
+<div class="figure"><span id="fig:BCfig2"></span>
+<img src="Figures/BC_fig2.png" alt="Cumulative rainfall from 6 to 9 August for three rain gauges in Metropolitan Manila. Refer to Fig. 2.1 for the position of the rain gauges. The distances between the three gauges are about 10 km." width="70%" />
+<p class="caption">
+Figure 2.2: Cumulative rainfall from 6 to 9 August for three rain gauges in Metropolitan Manila. Refer to Fig. 2.1 for the position of the rain gauges. The distances between the three gauges are about 10 km.
+</p>
+</div>
+<p>According to Figure <a href="event-reconstruction.html#fig:BCfig3">2.3</a>, three marked convective cells poured rain around Manila Bay, the largest of them extending from the centre of Manila Bay eastwards over Metropolitan Manila. Over the entire period of three days, the position of these cells remained quite persistent. This persistence––together with the high average rainfall intensities––explains the extreme local rainfall accumulations. Figure <a href="event-reconstruction.html#fig:BCfig3">2.3</a> also illustrates the mean vertical structure of rainfall between the evening of August 6 and the early morning of 7 August. The convective structures exhibit a marked decrease in rainfall intensity above an altitude of 5 to 6 km, which is typical for shallow convection. This vertical structure is also representative of the duration of the entire event.</p>
+<div class="figure"><span id="fig:BCfig3"></span>
+<img src="Figures/BC_fig3.png" alt="Mean rainfall intensity in the night from 6 August (20:00 UTC) until 7 August (08:00 UTC) as seen by the Subic S-band radar. The central figure shows a CAPPI at 3000 m altitude (for the rainfall estimation, we used the Pseudo-CAPPI at 2000 m. The marginal plots show the vertical distribution of intensity maxima along the x- and y-axis, respectively. In the area around Manila Bay, three marked cells appear. For these cells, the rainfall intensity exhibits a marked decrease above an altitude of 5 to 6 km, indicating rather shallow convection."  />
+<p class="caption">
+Figure 2.3: Mean rainfall intensity in the night from 6 August (20:00 UTC) until 7 August (08:00 UTC) as seen by the Subic S-band radar. The central figure shows a CAPPI at 3000 m altitude (for the rainfall estimation, we used the Pseudo-CAPPI at 2000 m. The marginal plots show the vertical distribution of intensity maxima along the x- and y-axis, respectively. In the area around Manila Bay, three marked cells appear. For these cells, the rainfall intensity exhibits a marked decrease above an altitude of 5 to 6 km, indicating rather shallow convection.
+</p>
+</div>
+<p>However, the unadjusted radar-based rainfall accumulation from 6 August (08:00 UTC) to 9 August (20:00 UTC) exhibits a significant underestimation if compared to the rain gauge recordings. While the radar estimates between 300 and 400 mm around Quezon City, rain gauges recorded up to 1000 mm. At the moment, the reasons for this level of underestimation remain unclear. Hardware calibration issues might as well play a role as effects of the vertical profile of reflectivity, which were not yet analysed in the course of this analysis. Beyond this general underestimation, the Subic radar shows massive beam shielding in the southern sectors, which is caused by Mount Natib, a volcano and caldera complex located in the province of Bataan. Other sectors of the Subic radar are affected by partial beam shielding due to a set of mountain peaks in the northern vicinity of the radar.</p>
+<p>In order to correct for the substantial underestimation, rain gauge recordings were used to adjust the rainfall estimated by the radar at an altitude of 2000 m (using the mean field bias adjustment approach). This procedure reduced the crossvalidation RMSE of the event-scale rainfall accumulation by more than half. The resulting rainfall distribution is shown in Figure @ref(fig:BC_fig4). This figure gives an impressive view on the amount of rain that actually came down around Metropolitan Manila. Obviously, the actual “epicentre” of the event was situated rather over the Manila Bay than over Metropolitan Manila itself.</p>
+<div class="figure"><span id="fig:BCfig4"></span>
+<img src="Figures/BC_fig4.png" alt="Gauge-adjusted radar-based rainfall estimation; accumulation period from 6 August (00:80 UTC) to 9 August (20:00 UTC). Basins draining to Metropolitan Manila are shown in orange, coastlines in white. Major cities are shown as white squares, while rain gages are represented as white circles. Note that the corresponding rainfall field obtained from the interpolation of rain gauge observations is available as Supplement."  />
+<p class="caption">
+Figure 2.4: Gauge-adjusted radar-based rainfall estimation; accumulation period from 6 August (00:80 UTC) to 9 August (20:00 UTC). Basins draining to Metropolitan Manila are shown in orange, coastlines in white. Major cities are shown as white squares, while rain gages are represented as white circles. Note that the corresponding rainfall field obtained from the interpolation of rain gauge observations is available as Supplement.
+</p>
+</div>
+<p>Due to its size and shape, the Marikina River basin (see Figure <a href="introduction.html#fig:BCfig1">2.1</a>)—as it did in September 2009—most strongly contributed to the flooding of Metropolitan Manila during the <em>Habagat of August 2012</em>. According to the gauge-adjusted radar rainfall estimates, the areal mean rainfall depth for the Marikina River basin amounted to 570 mm. In contrast, the areal rainfall average would add up to 440 mm (more than 20% less) if we only interpolated the rain gauge observations (by inverse distance weighting.</p>
+<p>If we now assumed a scenario in which the rainfall field had been shifted eastward by no more than 20 km, the areal rainfall average in the Marikina River basin would have increased by almost 30%. Since the catchment had already been saturated before the onset of the main event, almost all of the additional rain would have been directly transformed to runoff. A very rough, but illustrative calculation demonstrates the potential implications: according to the extreme value statistic for the Marikina River, a 500 m<span class="math inline">\(^3\)</span>/s increase in peak discharge at stream flow gauge Sto. Nino approximately corresponds to a 2.5-fold increase in the return period <span class="citation">(DPWH-JICA <a href="#ref-dpwh-jica_department_2003" role="doc-biblioref">2003</a>)</span>. For the <em>Habagat of August 2012</em> event, the peak discharge at gauge Sto. Nino was estimated to be around 3000 m<span class="math inline">\(^3\)</span>/s, corresponding to a return period of about 50 years. Assuming that every additional raindrop had been effective rainfall and assuming linear runoff concentration, the “20 km-shift” scenario would have resulted in a peak discharge of about 3900 m<span class="math inline">\(^3\)</span>/s—or a return period of more than 200 years. The return period of the flood event related to Typhoon Ketsana in September 2009 was estimated to be 150 years <span class="citation">(Tabios III <a href="#ref-tabios_iii_marikina_2009" role="doc-biblioref">2009</a>)</span>.</p>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-dpwh-jica_department_2003">
+<p>DPWH-JICA. 2003. “Department of Public Works and Highways, DPWH Japan International Cooperation Agency, JICA: Manual on Flood Control Planning, Project for the Enhancement of Capabilities in Flood Control.” <a href="http://www.jica.go.jp/project/philippines/%200600933/04/pdf/Manual%20on%20FC%20Planning.pdf">http://www.jica.go.jp/project/philippines/ 0600933/04/pdf/Manual on FC Planning.pdf</a>.</p>
+</div>
+<div id="ref-tabios_iii_marikina_2009">
+<p>Tabios III, G. Q. 2009. “Marikina River Flood Hydraulic Simulation During Typhoon Ondoy of 26 September 2009.” University of the Philippines, Diliman.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="radar-data-and-data-processing.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="conclusions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

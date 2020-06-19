@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4.4 SR–GR matching | PhD Thesis</title>
+  <meta name="description" content="my thesis" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4.4 SR–GR matching | PhD Thesis" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="my thesis" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4.4 SR–GR matching | PhD Thesis" />
+  
+  <meta name="twitter:description" content="my thesis" />
+  
+
+<meta name="author" content="Irene Crisologo" />
+
+
+<meta name="date" content="2020-06-19" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sec-methods.html"/>
+<link rel="next" href="sec-results.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Using spaceborne radar platforms to enhance the homogeneity of weather radar calibration</a></li>
+<li class="chapter" data-level="" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="" data-path="zusammenfassung.html"><a href="zusammenfassung.html"><i class="fa fa-check"></i>Zusammenfassung</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="how-weather-radars-work.html"><a href="how-weather-radars-work.html"><i class="fa fa-check"></i><b>1.1</b> How weather radars work</a></li>
+<li class="chapter" data-level="1.2" data-path="the-good-and-the-bad.html"><a href="the-good-and-the-bad.html"><i class="fa fa-check"></i><b>1.2</b> The good and the bad</a></li>
+<li class="chapter" data-level="1.3" data-path="calibration.html"><a href="calibration.html"><i class="fa fa-check"></i><b>1.3</b> Calibration</a></li>
+<li class="chapter" data-level="1.4" data-path="the-need-for-calibrated-radars-in-the-philippines.html"><a href="the-need-for-calibrated-radars-in-the-philippines.html"><i class="fa fa-check"></i><b>1.4</b> The need for (calibrated) radars in the Philippines</a></li>
+<li class="chapter" data-level="1.5" data-path="the-approach.html"><a href="the-approach.html"><i class="fa fa-check"></i><b>1.5</b> The approach</a></li>
+<li class="chapter" data-level="1.6" data-path="research-questions-and-structure.html"><a href="research-questions-and-structure.html"><i class="fa fa-check"></i><b>1.6</b> Research questions and structure</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="paper-1-using-the-new-philippine-radar-network-to-reconstruct-the-habagat-of-august-2012-monsoon-event.html"><a href="paper-1-using-the-new-philippine-radar-network-to-reconstruct-the-habagat-of-august-2012-monsoon-event.html"><i class="fa fa-check"></i><b>2</b> Paper 1: Using the new Philippine radar network to reconstruct the <em>Habagat of August 2012</em> monsoon event</a><ul>
+<li class="chapter" data-level="" data-path="abstract-1.html"><a href="abstract-1.html"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="2.1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2" data-path="radar-data-and-data-processing.html"><a href="radar-data-and-data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Radar data and data processing</a></li>
+<li class="chapter" data-level="2.3" data-path="event-reconstruction.html"><a href="event-reconstruction.html"><i class="fa fa-check"></i><b>2.3</b> Event reconstruction</a></li>
+<li class="chapter" data-level="2.4" data-path="conclusions.html"><a href="conclusions.html"><i class="fa fa-check"></i><b>2.4</b> Conclusions</a></li>
+<li class="chapter" data-level="2.5" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i><b>2.5</b> Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="paper-2-enhancing-the-consistency-of-spaceborne-and-ground-based-radar-comparisons-by-using-beam-blockage-fraction-as-a-quality-filter.html"><a href="paper-2-enhancing-the-consistency-of-spaceborne-and-ground-based-radar-comparisons-by-using-beam-blockage-fraction-as-a-quality-filter.html"><i class="fa fa-check"></i><b>3</b> Paper 2: Enhancing the Consistency of Spaceborne and Ground-Based Radar Comparisons by Using Beam Blockage Fraction as a Quality Filter</a><ul>
+<li class="chapter" data-level="" data-path="abstract-2.html"><a href="abstract-2.html"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="3.1" data-path="introduction-1.html"><a href="introduction-1.html"><i class="fa fa-check"></i><b>3.1</b> Introduction</a></li>
+<li class="chapter" data-level="3.2" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>3.2</b> Data</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="data.html"><a href="data.html#subsec:srpr"><i class="fa fa-check"></i><b>3.2.1</b> Spaceborne precipitation radar</a></li>
+<li class="chapter" data-level="3.2.2" data-path="data.html"><a href="data.html#ground-radar"><i class="fa fa-check"></i><b>3.2.2</b> Ground radar</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="method.html"><a href="method.html"><i class="fa fa-check"></i><b>3.3</b> Method</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="method.html"><a href="method.html#sec:partialbeamblocking"><i class="fa fa-check"></i><b>3.3.1</b> Partial beam shielding and quality index based on beam blockage fraction</a></li>
+<li class="chapter" data-level="3.3.2" data-path="method.html"><a href="method.html#subsec:srgrvolumematching"><i class="fa fa-check"></i><b>3.3.2</b> SR–GR Volume Matching</a></li>
+<li class="chapter" data-level="3.3.3" data-path="method.html"><a href="method.html#assessment-of-the-average-reflectivity-bias"><i class="fa fa-check"></i><b>3.3.3</b> Assessment of the average reflectivity bias</a></li>
+<li class="chapter" data-level="3.3.4" data-path="method.html"><a href="method.html#computational-details"><i class="fa fa-check"></i><b>3.3.4</b> Computational details</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="sec-resultsanddiscussion.html"><a href="sec-resultsanddiscussion.html"><i class="fa fa-check"></i><b>3.4</b> Results and discussion</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="sec-resultsanddiscussion.html"><a href="sec-resultsanddiscussion.html#single-event-comparison"><i class="fa fa-check"></i><b>3.4.1</b> Single event comparison</a></li>
+<li class="chapter" data-level="3.4.2" data-path="sec-resultsanddiscussion.html"><a href="sec-resultsanddiscussion.html#overall-junenovember-comparison-during-the-5-year-observation-period"><i class="fa fa-check"></i><b>3.4.2</b> Overall June–November comparison during the 5-year observation period</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="conclusions-1.html"><a href="conclusions-1.html"><i class="fa fa-check"></i><b>3.5</b> Conclusions</a></li>
+<li class="chapter" data-level="" data-path="acknowledgements-1.html"><a href="acknowledgements-1.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="using-ground-radar-overlaps-to-verify-the-retrieval-of-calibration-bias-estimates-from-spaceborne-platforms.html"><a href="using-ground-radar-overlaps-to-verify-the-retrieval-of-calibration-bias-estimates-from-spaceborne-platforms.html"><i class="fa fa-check"></i><b>4</b> Using ground radar overlaps to verify the retrieval of calibration bias estimates from spaceborne platforms</a><ul>
+<li class="chapter" data-level="" data-path="abstract-3.html"><a href="abstract-3.html"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="4.1" data-path="introduction-2.html"><a href="introduction-2.html"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="sec-data-studyarea.html"><a href="sec-data-studyarea.html"><i class="fa fa-check"></i><b>4.2</b> Data and Study Area</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="sec-data-studyarea.html"><a href="sec-data-studyarea.html#subic-radar-sub"><i class="fa fa-check"></i><b>4.2.1</b> Subic radar (SUB)</a></li>
+<li class="chapter" data-level="4.2.2" data-path="sec-data-studyarea.html"><a href="sec-data-studyarea.html#tagaytay-radar-tag"><i class="fa fa-check"></i><b>4.2.2</b> Tagaytay radar (TAG)</a></li>
+<li class="chapter" data-level="4.2.3" data-path="sec-data-studyarea.html"><a href="sec-data-studyarea.html#spaceborne-precipitation-radar"><i class="fa fa-check"></i><b>4.2.3</b> Spaceborne precipitation radar</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="sec-methods.html"><a href="sec-methods.html"><i class="fa fa-check"></i><b>4.3</b> Methods</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="sec-methods.html"><a href="sec-methods.html#subsec:methodoverview"><i class="fa fa-check"></i><b>4.3.1</b> Overview</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="srgr-matching.html"><a href="srgr-matching.html"><i class="fa fa-check"></i><b>4.4</b> SR–GR matching</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="srgr-matching.html"><a href="srgr-matching.html#grgr-matching"><i class="fa fa-check"></i><b>4.4.1</b> GR–GR matching</a></li>
+<li class="chapter" data-level="4.4.2" data-path="srgr-matching.html"><a href="srgr-matching.html#estimation-of-path-integrated-attenuation"><i class="fa fa-check"></i><b>4.4.2</b> Estimation of path-integrated attenuation</a></li>
+<li class="chapter" data-level="4.4.3" data-path="srgr-matching.html"><a href="srgr-matching.html#beam-blockage"><i class="fa fa-check"></i><b>4.4.3</b> Beam Blockage</a></li>
+<li class="chapter" data-level="4.4.4" data-path="srgr-matching.html"><a href="srgr-matching.html#subsec:qualityweighting"><i class="fa fa-check"></i><b>4.4.4</b> Quality index and quality-weighted averaging</a></li>
+<li class="chapter" data-level="4.4.5" data-path="srgr-matching.html"><a href="srgr-matching.html#computational-details-1"><i class="fa fa-check"></i><b>4.4.5</b> Computational details</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="sec-results.html"><a href="sec-results.html"><i class="fa fa-check"></i><b>4.5</b> Results and Discussion</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="sec-results.html"><a href="sec-results.html#subsec:extendingquality"><i class="fa fa-check"></i><b>4.5.1</b> The effect of extended quality filtering: the case of December 9, 2014</a></li>
+<li class="chapter" data-level="4.5.2" data-path="sec-results.html"><a href="sec-results.html#subsec:biasfromoverpass"><i class="fa fa-check"></i><b>4.5.2</b> Estimating the GR calibration bias from SR overpass events</a></li>
+<li class="chapter" data-level="4.5.3" data-path="sec-results.html"><a href="sec-results.html#subsec:effectofbias"><i class="fa fa-check"></i><b>4.5.3</b> The effect of bias correction on the GR consistency: case studies</a></li>
+<li class="chapter" data-level="4.5.4" data-path="sec-results.html"><a href="sec-results.html#subsec:interpolation"><i class="fa fa-check"></i><b>4.5.4</b> Can we interpolate calibration bias estimates in time?</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="acknowledgements-2.html"><a href="acknowledgements-2.html"><i class="fa fa-check"></i><b>4.6</b> Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="discussion-limitations-outlook.html"><a href="discussion-limitations-outlook.html"><i class="fa fa-check"></i><b>5</b> Discussion, Limitations, Outlook</a><ul>
+<li class="chapter" data-level="5.1" data-path="limitations-of-the-study.html"><a href="limitations-of-the-study.html"><i class="fa fa-check"></i><b>5.1</b> Limitations of the study</a></li>
+<li class="chapter" data-level="5.2" data-path="outlook.html"><a href="outlook.html"><i class="fa fa-check"></i><b>5.2</b> Outlook</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="summary-and-conclusion.html"><a href="summary-and-conclusion.html"><i class="fa fa-check"></i><b>6</b> Summary and Conclusion</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">PhD Thesis</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="srgr-matching" class="section level2">
+<h2><span class="header-section-number">4.4</span> SR–GR matching</h2>
+<p>To determine the calibration bias of each radar, we employ the relative calibration approach by using the spaceborne-radar (SR) as a reference. In order to avoid introducing errors by interpolation, we use a volume-matching procedure. The 3D geometric matching method proposed by <span class="citation">Schwaller and Morris (<a href="#ref-schwaller_ground_2011" role="doc-biblioref">2011</a>)</span>, further developed by <span class="citation">Warren et al. (<a href="#ref-warren_calibrating_2018" role="doc-biblioref">2018</a>)</span>, was used to match SR bins to GR bins. This method has been implemented with the Subic radar for the same time period by <span class="citation">Crisologo et al. (<a href="#ref-crisologo_enhancing_2018" role="doc-biblioref">2018</a>)</span>. In this study, we extend it to the TAG radar. Since the two radars are operating under the same scanning strategy and spatial resolution, the thresholds applied in filtering the data are kept the same as in the SR–SUB comparison described in Section 3.2 Table 3 of <span class="citation">Crisologo et al. (<a href="#ref-crisologo_enhancing_2018" role="doc-biblioref">2018</a>)</span>. Details of the SR data specifications and the matching procedure can be found in <span class="citation">Crisologo et al. (<a href="#ref-crisologo_enhancing_2018" role="doc-biblioref">2018</a>)</span>.</p>
+<div id="grgr-matching" class="section level3">
+<h3><span class="header-section-number">4.4.1</span> GR–GR matching</h3>
+<p>We compare the reflectivities of both ground radars in the overlapping region to quantify the mean and the standard deviation of their differences, and thus the effectiveness of the quality-weighting and the relative calibration procedure. In order to compare reflectivities from different radars, the different viewing geometries must be carefully considered. The polar coordinates of each radar are transformed into azimuthal equidistant projection coordinates, centered on each radar. Each radar cartesian coordinate is then transformed into the other radar’s spherical coordinate system, such that each of the radar bins of the TAG radar have coordinates with respect to the SUB radar, and vice versa. For this purpose, we use the georeferencing module of the wradlib library (<a href="https://wradlib.org" class="uri">https://wradlib.org</a>) which allows for transforming between any spherical and Cartesian reference systems. Bins of the TAG radar that are less than 120 km away from the SUB radar are chosen. The same is done for bins of the SUB radar. In order to match only bins of similar volume, <span class="citation">Seo, Krajewski, and Smith (<a href="#ref-seo_four-dimensional_2014" role="doc-biblioref">2014</a>)</span> suggested a matching zone of 3 km within the equidistant line between the two radars. We decided to make this requirement less strict in order to include more matches, and thus extended this range to 10 km. From the selected bins, each SUB bin is matched with the closest TAG bin, not exceeding 250 m in distance. The matching SUB and TAG bins are exemplarily shown in black in Figure <a href="srgr-matching.html#fig:Fig3matchedBBF05">4.3</a> for the 0.5<span class="math inline">\(^{\circ}\)</span> elevation angle, such that each black bin in the SUB row corresponds with a black bin in the TAG row.</p>
+</div>
+<div id="estimation-of-path-integrated-attenuation" class="section level3">
+<h3><span class="header-section-number">4.4.2</span> Estimation of path-integrated attenuation</h3>
+<p>Atmospheric attenuation depends on the radar’s operating frequency <span class="citation">Holleman et al. (<a href="#ref-holleman_quality_2006" role="doc-biblioref">2006</a>)</span>. For radar signals with wavelengths below 10 cm (such as C- and X-band radars), significant attenuation due to precipitation can occur <span class="citation">Vulpiani et al. (<a href="#ref-vulpiani_rainfall_2006" role="doc-biblioref">2006</a>)</span>, depending on precipitation intensity <span class="citation">Holleman et al. (<a href="#ref-holleman_quality_2006" role="doc-biblioref">2006</a>)</span>. In tropical areas such as the Philippines, where torrential rains and typhoons abound, C-band radars suffer from substantial PIA.</p>
+<p>In this study, we require PIA estimates as a quality variable to assign different weights of GR reflectivity samples when computing quality-weighted averages of reflectivity (see section <a href="srgr-matching.html#subsec:qualityweighting">4.4.4</a>). For that purpose, PIA is estimated by using dual-pol moments observed by the TAG radar. The corresponding procedure includes the removal of non-meteorological echoes based on a fuzzy echo classification, and the reconstruction of the differential propagation phase from which PIA is finally estimated. The method is based on <span class="citation">Vulpiani et al. (<a href="#ref-vulpiani_use_2012" role="doc-biblioref">2012</a>)</span>, and was comprehensively documented and verified for the TAG radar by <span class="citation">Crisologo et al. (<a href="#ref-crisologo_polarimetric_2014" role="doc-biblioref">2014</a>)</span> which is why we only briefly outline it in the following.</p>
+<p>The fuzzy classification of meteorological vs. non-meteorological echoes was based on the following decision variables: the Doppler velocity, the copolar cross-correlation, the textures <span class="citation">(Gourley, Tabary, and Parent du Chatelet <a href="#ref-gourley_fuzzy_2007" role="doc-biblioref">2007</a>)</span> of differential reflectivity, copolar cross-correlation, and differential propagation phase (<span class="math inline">\(\Phi_{DP}\)</span>), and a static clutter map. The parameters of the trapezoidal membership functions as well as the weights of the decision variables are specified in Table 2 of <span class="citation">Crisologo et al. (<a href="#ref-crisologo_polarimetric_2014" role="doc-biblioref">2014</a>)</span>. Bins classified as non-meteorological were removed from the beam profile and then filled in the subsequent processing step. In that step, a clean <span class="math inline">\(\Phi_{DP}\)</span> profile is reconstructed by removing the effects of wrapping, system offset and residual artifacts. The reconstruction consists of an iterative procedure in which <span class="math inline">\(K_{DP}\)</span> is repeatedly estimated from <span class="math inline">\(\Phi_{DP}\)</span> using a convolutional filter, and <span class="math inline">\(\Phi_{DP}\)</span> again retrieved from <span class="math inline">\(K_{DP}\)</span> via integration, after filtering spurious and physically implausible <span class="math inline">\(K_{DP}\)</span> values.</p>
+<p>According to <span class="citation">Bringi et al. (<a href="#ref-bringi_examination_1990" role="doc-biblioref">1990</a>)</span>, specific attenuation, <span class="math inline">\(\alpha_{hh}\)</span> (dB km<span class="math inline">\(^{-1}\)</span>), is linearly related to <span class="math inline">\(K_{DP}\)</span> by a coefficient <span class="math inline">\(\gamma_{hh}\)</span> (dB deg<span class="math inline">\(^{-1}\)</span>) which we assume to be constant in time and space with a value of <span class="math inline">\(\gamma_{hh}\)</span> = 0.08 <span class="citation">(Carey et al. <a href="#ref-carey_correcting_2000" role="doc-biblioref">2000</a>)</span>. Hence, the two-way path-integrated attenuation, <span class="math inline">\(A_{hh}\)</span> (dB), can then be obtained from the integral of the specific attenuation along each beam—which is equivalent to our reconstructed <span class="math inline">\(\Phi_{DP}\)</span> from which the system offset (<span class="math inline">\(\Phi_{DP}(r_0)\)</span>) was removed in the previous step.</p>
+<p><span class="math display">\[
+\begin{align}
+A_{hh}(s) &amp;= 2 \int ^r _{r_0} \alpha_{hh}(s)ds \\
+&amp;= 2 \gamma_{hh} \int^r_{r_0} K_{DP}(s)ds \\
+&amp;= \gamma_{hh} (\Phi_{DP}(r) - \Phi_{DP} (r_0))
+\end{align}
+\]</span></p>
+</div>
+<div id="beam-blockage" class="section level3">
+<h3><span class="header-section-number">4.4.3</span> Beam Blockage</h3>
+<p>In regions of complex topography, the ground radar beam can be totally or partially blocked by topographic obstacles, resulting in weakening or loss of the signal. To simulate the extent of beam blockage for each ground radar, as introduced by topography, we used the algorithm proposed by <span class="citation">Bech et al. (<a href="#ref-bech_sensitivity_2003" role="doc-biblioref">2003</a>)</span>, together with the Shuttle Radar Topography Mission (SRTM) DEM with a 1 arc-second (approximately 30 m) resolution. The procedure has been documented in <span class="citation">Crisologo et al. (<a href="#ref-crisologo_enhancing_2018" role="doc-biblioref">2018</a>)</span> in more detail. In summary, the values of the DEM are resampled to the radar bin centroid coordinates to match the polar resolution of the radar data. Then, the algorithm computes the beam blockage fraction for each radar bin by comparing the elevation of the radar beam in that bin with the terrain elevation. Finally, the cumulative beam blockage fraction (BBF) is calculated for all the bins along each ray, where a value of 1.0 corresponds to total occlusion and a value of 0.0 to complete visibility.</p>
+</div>
+<div id="subsec:qualityweighting" class="section level3">
+<h3><span class="header-section-number">4.4.4</span> Quality index and quality-weighted averaging</h3>
+<p>The quality index is a quantity used to describe data quality, represented by numbers ranging from 0 (poor quality) to 1 (excellent quality), with the objective of characterizing data quality independent of the source, hardware, and signal processing <span class="citation">(Einfalt, Szturc, and Ośródka <a href="#ref-einfalt_quality_2010" role="doc-biblioref">2010</a>)</span>.</p>
+<p>To calculate a quality index for the beam blockage fraction, the transformation function suggested by <span class="citation">Zhang et al. (<a href="#ref-zhang_radar_2011" role="doc-biblioref">2011</a>)</span> is used:</p>
+<p><span class="math display">\[
+\begin{equation}
+\scriptstyle
+Q_{BBF} = \left\{
+\begin{matrix}
+1             &amp; BBF \leq 0.1 \\ 
+1-\frac{BBF-0.1}{0.4}             &amp; 0.1 &lt; BBF \leq 0.5\\ 
+0 &amp; BBF &gt; 0.5 
+\end{matrix}
+\right\}
+\end{equation}
+\]</span></p>
+<p>Figure @ref(fig:Fig3_matched_BBF_05) shows the beam blockage quality index (<span class="math inline">\(Q_{BBF}\)</span>) maps of SUB and TAG for the lowest elevation angle. Subic is substantially affected by beam blockage in the northern and southern sector, due to the radar sitting between two mountains along a mountain range. The southern beam blockage sector of the Subic radar clearly affects the region of overlap with the Tagaytay radar. Meanwhile, TAG has a clearer view towards the north, with only a narrow sector to the east and partially in the south being affected by very high beam blockage. It is not shown in the figure, but the higher elevation angles of the TAG radar are not affected by any beam blockage.</p>
+<!-- \begin{figure*} -->
+<!-- \centering -->
+<!-- \includegraphics[width=0.9\linewidth]{./Figures/Fig3_matched_BBF_05.png} -->
+<!-- \caption[Beam blockage quality index map for Subic and Tagaytay radars showing matched bin locations]{The beam blockage quality index ($Q_{BBF}$) for the two radars is shown in the background for each corresponding elevation angle. Black points show the locations of matched bins between SUB and TAG for each radar coverage, exemplarily for an elevation of 0.5 degree. } -->
+<!-- \label{fig:Fig3_matched_BBF_05} -->
+<!-- \end{figure*} -->
+<center>
+<div class="figure"><span id="fig:Fig3matchedBBF05"></span>
+<img src="Figures/Fig3_matched_BBF_05.png" alt="The beam blockage quality index ($Q_{BBF}$) for the two radars is shown in the background for each corresponding elevation angle. Black points show the locations of matched bins between SUB and TAG for each radar coverage, exemplarily for an elevation of 0.5 degree" width="70%" />
+<p class="caption">
+Figure 4.3: The beam blockage quality index (<span class="math inline">\(Q_{BBF}\)</span>) for the two radars is shown in the background for each corresponding elevation angle. Black points show the locations of matched bins between SUB and TAG for each radar coverage, exemplarily for an elevation of 0.5 degree
+</p>
+</div>
+</center>
+<p>For path-integrated attenuation, the values are transformed into a quality index as</p>
+<p><span class="math display">\[
+\begin{equation}
+\scriptstyle
+Q_{PIA} = \left\{\begin{matrix}
+1 &amp; \text{for} &amp; K_{r,s} &lt; K_{min}\\ 
+0 &amp; \text{for} &amp; K_{r,s} &gt; K_{max}\\ 
+\frac{K_{max} - K_{r,s}}{K_{max} - K_{min}} &amp; \text{else}, &amp; 
+\end{matrix}\right\}
+\end{equation}
+\]</span></p>
+<p>following the function proposed by <span class="citation">Friedrich, Hagen, and Einfalt (<a href="#ref-friedrich_quality_2006" role="doc-biblioref">2006</a>)</span>, where <span class="math inline">\(K_{min}\)</span> and <span class="math inline">\(K_{max}\)</span> are the lower and upper attenuation thresholds. The values for <span class="math inline">\(K_{min}\)</span> and <span class="math inline">\(K_{max}\)</span> are chosen to be 1 dB and 10 dB.</p>
+<p>Multiple quality indices from different quality variables can be combined in order to obtain a single index of total quality. Different combination approaches have been suggested, e.g. by addition or multiplication <span class="citation">(Norman et al. <a href="#ref-norman_quality_2010" role="doc-biblioref">2010</a>)</span>, or by weighted averaging <span class="citation">(Michelson et al. <a href="#ref-michelson_weather_2005" role="doc-biblioref">2005</a>)</span>. We chose to combine <span class="math inline">\(Q_{BBF}\)</span> and <span class="math inline">\(Q_{PIA}\)</span> multiplicatively, in order to make sure that a low value of either of the two propagates to the total quality index (<span class="math inline">\(Q_{GR} = Q_{GR,BBF} * Q_{GR,PIA}\)</span>), where <span class="math inline">\(Q_{GR}\)</span> can either be <span class="math inline">\(Q_{SUB}\)</span> or <span class="math inline">\(Q_{TAG}\)</span>.</p>
+<p>It should be noted that <span class="math inline">\(Q_{SUB,PIA}\)</span> is always considered to have a value of 1, as we consider attenuation negligible for S-band radars, so that effectively <span class="math inline">\(Q_{SUB}\)</span> = <span class="math inline">\(Q_{SUB,BBF}\)</span>.</p>
+<p>Based on this quality index <span class="math inline">\(Q_{GR}\)</span>, we follow the quality-weighting approach as outlined in Crisologo et al. (2018). For each match between SR and GR bins, the quality <span class="math inline">\(Q_{match}\)</span> is obtained from the minimum <span class="math inline">\(Q_{GR}\)</span> value of the GR bins in that match. We then compute the average and the standard deviation of the reflectivity differences between SR and GR by using the Qmatch values as linear weights (see <span class="citation">Crisologo et al. (<a href="#ref-crisologo_enhancing_2018" role="doc-biblioref">2018</a>)</span> for details). We basically follow the same approach when we compute the quality-weighted average and standard deviation of the differences between the two ground radars, SUB and TAG, in the region of overlap. Here, the quality <span class="math inline">\(Q_{match}\)</span> of each match is computed as the product <span class="math inline">\(Q_{SUB}*Q_{TAG}\)</span> of the two matched GR bins.</p>
+<p>It should be emphasized at this point that, in the region of overlap, the TAG radar is not affected by beam blockage. So while the computation of calibration bias for the TAG radar, based on SR overpasses, is affected by <span class="math inline">\(Q_{TAG,BBF}\)</span> (as it uses the full TAG domain), the comparison of SUB and TAG reflectivities is, in fact, only governed by <span class="math inline">\(Q_{SUB,BBF}\)</span> and <span class="math inline">\(Q_{TAG,PIA}\)</span>.</p>
+</div>
+<div id="computational-details-1" class="section level3">
+<h3><span class="header-section-number">4.4.5</span> Computational details</h3>
+<p>Following the guidelines for transparency and reproducibility in weather and climate sciences as suggested by <span class="citation">Irving (<a href="#ref-irving_minimum_2016" role="doc-biblioref">2016</a>)</span>, we have made the entire processing workflow and sample data available online at <a href="https://github.com/IreneCrisologo/inter-radar" class="uri">https://github.com/IreneCrisologo/inter-radar</a>. The main components of that workflow are based on the open source software library for processing weather radar data called wradlib <span class="citation">(M. Heistermann, Jacobi, and Pfaff <a href="#ref-heistermann_technical_2013" role="doc-biblioref">2013</a>)</span>, version 1.2 (released on 31.10.2018) based on Python 3.6. The main dependencies of wradlib include Numerical Python (NumPy; <span class="citation">Oliphant (<a href="#ref-oliphant_guide_2015" role="doc-biblioref">2015</a>)</span>, Matplotlib <span class="citation">(Hunter <a href="#ref-hunter_matplotlib_2007" role="doc-biblioref">2007</a>)</span>, Scientific Python (SciPy; <span class="citation">Jones, Oliphant, and Peterson (<a href="#ref-jones_scipy_2014" role="doc-biblioref">2014</a>)</span>), h5py <span class="citation">(Collette <a href="#ref-collette_python_2013" role="doc-biblioref">2013</a>)</span>, netCDF4 <span class="citation">(Rew et al. <a href="#ref-rew_unidata_1989" role="doc-biblioref">1989</a>)</span>, gdal <span class="citation">(GDAL Development Team <a href="#ref-gdal_development_team_gdal_2017" role="doc-biblioref">2017</a>)</span>, and pandas <span class="citation">(McKinney <a href="#ref-mckinney_data_2010" role="doc-biblioref">2010</a>)</span>.</p>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-bech_sensitivity_2003">
+<p>Bech, Joan, Bernat Codina, Jeroni Lorente, and David Bebbington. 2003. “The Sensitivity of Single Polarization Weather Radar Beam Blockage Correction to Variability in the Vertical Refractivity Gradient.” <em>Journal of Atmospheric and Oceanic Technology</em> 20 (6): 845–55. <a href="http://journals.ametsoc.org/doi/abs/10.1175/1520-0426(2003)020%3C0845:TSOSPW%3E2.0.CO;2">http://journals.ametsoc.org/doi/abs/10.1175/1520-0426(2003)020%3C0845:TSOSPW%3E2.0.CO;2</a>.</p>
+</div>
+<div id="ref-bringi_examination_1990">
+<p>Bringi, V. N., V. Chandrasekar, N. Balakrishnan, and D. S. Zrnić. 1990. “An Examination of Propagation Effects in Rainfall on Radar Measurements at Microwave Frequencies.” <em>Journal of Atmospheric and Oceanic Technology</em> 7 (6): 829–40. <a href="https://doi.org/10.1175/1520-0426(1990)007%3C0829:AEOPEI%3E2.0.CO;2">https://doi.org/10.1175/1520-0426(1990)007&lt;0829:AEOPEI&gt;2.0.CO;2</a>.</p>
+</div>
+<div id="ref-carey_correcting_2000">
+<p>Carey, Lawrence D., Steven A. Rutledge, David A. Ahijevych, and Tom D. Keenan. 2000. “Correcting Propagation Effects in C-Band Polarimetric Radar Observations of Tropical Convection Using Differential Propagation Phase.” <em>Journal of Applied Meteorology</em> 39 (9): 1405–33. <a href="https://doi.org/10.1175/1520-0450(2000)039%3C1405:CPEICB%3E2.0.CO;2">https://doi.org/10.1175/1520-0450(2000)039&lt;1405:CPEICB&gt;2.0.CO;2</a>.</p>
+</div>
+<div id="ref-collette_python_2013">
+<p>Collette, Andrew. 2013. <em>Python and HDF5</em>. O’Reilly.</p>
+</div>
+<div id="ref-crisologo_enhancing_2018">
+<p>Crisologo, Irene, Robert A. Warren, Kai Mühlbauer, and Maik Heistermann. 2018. “Enhancing the Consistency of Spaceborne and Ground-Based Radar Comparisons by Using Beam Blockage Fraction as a Quality Filter.” <em>Atmospheric Measurement Techniques</em> 11 (9): 5223–36. <a href="https://doi.org/https://doi.org/10.5194/amt-11-5223-2018">https://doi.org/https://doi.org/10.5194/amt-11-5223-2018</a>.</p>
+</div>
+<div id="ref-crisologo_polarimetric_2014">
+<p>Crisologo, I., G. Vulpiani, C. C. Abon, C. P. C. David, A. Bronstert, and Maik Heistermann. 2014. “Polarimetric Rainfall Retrieval from a C-Band Weather Radar in a Tropical Environment (the Philippines).” <em>Asia-Pacific Journal of Atmospheric Sciences</em> 50 (S1): 595–607. <a href="https://doi.org/10.1007/s13143-014-0049-y">https://doi.org/10.1007/s13143-014-0049-y</a>.</p>
+</div>
+<div id="ref-einfalt_quality_2010">
+<p>Einfalt, Thomas, Jan Szturc, and Katarzyna Ośródka. 2010. “The Quality Index for Radar Precipitation Data: A Tower of Babel?” <em>Atmospheric Science Letters</em> 11 (2): 139–44. <a href="https://doi.org/10.1002/asl.271">https://doi.org/10.1002/asl.271</a>.</p>
+</div>
+<div id="ref-friedrich_quality_2006">
+<p>Friedrich, Katja, Martin Hagen, and Thomas Einfalt. 2006. “A Quality Control Concept for Radar Reflectivity, Polarimetric Parameters, and Doppler Velocity.” <em>Journal of Atmospheric and Oceanic Technology</em> 23 (7): 865–87. <a href="http://journals.ametsoc.org/doi/abs/10.1175/JTECH1920.1">http://journals.ametsoc.org/doi/abs/10.1175/JTECH1920.1</a>.</p>
+</div>
+<div id="ref-gdal_development_team_gdal_2017">
+<p>GDAL Development Team. 2017. “GDAL - Geospatial Data Abstraction Library, Version 2.2.3.” Open Source Geospatial Foundation. <a href="http://www.gdal.org/">http://www.gdal.org/</a>.</p>
+</div>
+<div id="ref-gourley_fuzzy_2007">
+<p>Gourley, Jonathan J., Pierre Tabary, and Jacques Parent du Chatelet. 2007. “A Fuzzy Logic Algorithm for the Separation of Precipitating from Nonprecipitating Echoes Using Polarimetric Radar Observations.” <em>Journal of Atmospheric and Oceanic Technology</em> 24 (8): 1439–51. <a href="https://doi.org/10.1175/JTECH2035.1">https://doi.org/10.1175/JTECH2035.1</a>.</p>
+</div>
+<div id="ref-heistermann_technical_2013">
+<p>Heistermann, M., S. Jacobi, and T. Pfaff. 2013. “Technical Note: An Open Source Library for Processing Weather Radar Data (Wradlib).” <em>Hydrology and Earth System Sciences</em> 17 (2): 863–71. <a href="https://doi.org/10.5194/hess-17-863-2013">https://doi.org/10.5194/hess-17-863-2013</a>.</p>
+</div>
+<div id="ref-holleman_quality_2006">
+<p>Holleman, Iwan, Daniel Michelson, Gianmario Galli, Urs Germann, and Markus Peura. 2006. “Quality Information for Radars and Radar Data.” OPERA workpackage 1.2. <a href="http://cdn.knmi.nl/system/data_center_publications/files/000/046/931/original/opera_wp12_v6.pdf?1432896393">http://cdn.knmi.nl/system/data_center_publications/files/000/046/931/original/opera_wp12_v6.pdf?1432896393</a>.</p>
+</div>
+<div id="ref-hunter_matplotlib_2007">
+<p>Hunter, J. D. 2007. “Matplotlib: A 2D Graphics Environment.” <em>Computing in Science Engineering</em> 9 (3): 90–95. <a href="https://doi.org/10.1109/MCSE.2007.55">https://doi.org/10.1109/MCSE.2007.55</a>.</p>
+</div>
+<div id="ref-irving_minimum_2016">
+<p>Irving, Damien. 2016. “A Minimum Standard for Publishing Computational Results in the Weather and Climate Sciences.” <em>Bulletin of the American Meteorological Society</em> 97 (7): 1149–58. <a href="https://doi.org/10.1175/BAMS-D-15-00010.1">https://doi.org/10.1175/BAMS-D-15-00010.1</a>.</p>
+</div>
+<div id="ref-jones_scipy_2014">
+<p>Jones, Eric, Travis E. Oliphant, and Pearu Peterson. 2014. “SciPy: Open Source Scientific Tools for Python.”</p>
+</div>
+<div id="ref-mckinney_data_2010">
+<p>McKinney, Wes. 2010. “Data Structures for Statistical Computing in Python.” In <em>Proceedings of the 9th Python in Science Conference</em>, 445:51–56. Austin, TX.</p>
+</div>
+<div id="ref-michelson_weather_2005">
+<p>Michelson, Daniel, Thomas Einfalt, Iwan Holleman, Uta Gjertsen, Friedrich, Katja, Günther Haase, Magnus Lindskog, and Anna Jurczyk. 2005. <em>Weather Radar Data Quality in Europe Quality Control and Characterisation.</em> Luxembourg: Publications Office.</p>
+</div>
+<div id="ref-norman_quality_2010">
+<p>Norman, K., N. Gaussiat, D. Harrison, R. Scovell, and M. Boscacci. 2010. “A Quality Index for Radar Data.” <em>OPERA Deliverable OPERA_2010_03</em>. <a href="http://www.eumetnet.eu/sites/default/files/OPERA_2010_03_Quality_Index.pdf">http://www.eumetnet.eu/sites/default/files/OPERA_2010_03_Quality_Index.pdf</a>.</p>
+</div>
+<div id="ref-oliphant_guide_2015">
+<p>Oliphant, Travis E. 2015. <em>Guide to NumPy</em>. 2nd ed. USA: CreateSpace Independent Publishing Platform.</p>
+</div>
+<div id="ref-rew_unidata_1989">
+<p>Rew, Russ, Glenn Davis, Steve Emmerson, Cathy Cormack, John Caron, Robert Pincus, Ed Hartnett, Dennis Heimbigner, Lynton Appel, and Ward Fisher. 1989. “Unidata NetCDF.” UCAR/NCAR - Unidata. <a href="http://www.unidata.ucar.edu/software/netcdf/">http://www.unidata.ucar.edu/software/netcdf/</a>.</p>
+</div>
+<div id="ref-schwaller_ground_2011">
+<p>Schwaller, Mathew R., and K. Robert Morris. 2011. “A Ground Validation Network for the Global Precipitation Measurement Mission.” <em>Journal of Atmospheric and Oceanic Technology</em> 28 (3): 301–19. <a href="https://doi.org/10.1175/2010JTECHA1403.1">https://doi.org/10.1175/2010JTECHA1403.1</a>.</p>
+</div>
+<div id="ref-seo_four-dimensional_2014">
+<p>Seo, Bong-Chul, Witold F. Krajewski, and James A. Smith. 2014. “Four-Dimensional Reflectivity Data Comparison Between Two Ground-Based Radars: Methodology and Statistical Analysis.” <em>Hydrological Sciences Journal</em> 59 (7): 1320–34. <a href="https://doi.org/10.1080/02626667.2013.839872">https://doi.org/10.1080/02626667.2013.839872</a>.</p>
+</div>
+<div id="ref-vulpiani_use_2012">
+<p>Vulpiani, Gianfranco, Mario Montopoli, Luca Delli Passeri, Antonio G. Gioia, Pietro Giordano, and Frank S. Marzano. 2012. “On the Use of Dual-Polarized C-Band Radar for Operational Rainfall Retrieval in Mountainous Areas.” <em>Journal of Applied Meteorology and Climatology</em> 51 (2): 405–25. <a href="https://doi.org/10.1175/JAMC-D-10-05024.1">https://doi.org/10.1175/JAMC-D-10-05024.1</a>.</p>
+</div>
+<div id="ref-vulpiani_rainfall_2006">
+<p>Vulpiani, G., F. S. Marzano, V. Chandrasekar, A. Berne, and R. Uijlenhoet. 2006. “Rainfall Rate Retrieval in Presence of Path Attenuation Using C-Band Polarimetric Weather Radars.” <em>Natural Hazards and Earth System Science</em> 6 (3): 439–50. <a href="https://doi.org/10.5194/nhess-6-439-2006">https://doi.org/10.5194/nhess-6-439-2006</a>.</p>
+</div>
+<div id="ref-warren_calibrating_2018">
+<p>Warren, Robert A., Alain Protat, Steven T. Siems, Hamish A. Ramsay, Valentin Louf, Michael J. Manton, and Thomas A. Kane. 2018. “Calibrating Ground-Based Radars Against TRMM and GPM.” <em>Journal of Atmospheric and Oceanic Technology</em>, February. <a href="https://doi.org/10.1175/JTECH-D-17-0128.1">https://doi.org/10.1175/JTECH-D-17-0128.1</a>.</p>
+</div>
+<div id="ref-zhang_radar_2011">
+<p>Zhang, JIAN, YOUCUN Qi, K. Howard, C. Langston, and B. Kaney. 2011. “Radar Quality Index (RQI)—A Combined Measure of Beam Blockage and VPR Effects in a National Network.” In <em>Proceedings, International Symposium on Weather Radar and Hydrology</em>. <a href="http://www.nssl.noaa.gov/projects/q2/tutorial/images/mosaic/WRaH_Proceedings_Zhang-et-al_v3.pdf">http://www.nssl.noaa.gov/projects/q2/tutorial/images/mosaic/WRaH_Proceedings_Zhang-et-al_v3.pdf</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sec-methods.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sec-results.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

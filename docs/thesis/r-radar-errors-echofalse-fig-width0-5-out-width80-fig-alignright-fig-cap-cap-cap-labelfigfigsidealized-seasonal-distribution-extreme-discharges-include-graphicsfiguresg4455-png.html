@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>5 {r radar_errors, echo=FALSE, fig.width=0.5, out.width='80%', fig.align='right', fig.cap = cap} # # cap &lt;- "\\label{fig:figs}Idealized seasonal distribution extreme discharges." # # include_graphics("Figures/g4455.png") # | PhD Thesis</title>
+  <meta name="description" content="my thesis">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="5 {r radar_errors, echo=FALSE, fig.width=0.5, out.width='80%', fig.align='right', fig.cap = cap} # # cap &lt;- "\\label{fig:figs}Idealized seasonal distribution extreme discharges." # # include_graphics("Figures/g4455.png") # | PhD Thesis" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="my thesis" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 {r radar_errors, echo=FALSE, fig.width=0.5, out.width='80%', fig.align='right', fig.cap = cap} # # cap &lt;- "\\label{fig:figs}Idealized seasonal distribution extreme discharges." # # include_graphics("Figures/g4455.png") # | PhD Thesis" />
+  
+  <meta name="twitter:description" content="my thesis" />
+  
+
+<meta name="author" content="Irene Crisologo">
+
+
+<meta name="date" content="2019-04-24">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="intro.html">
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Thesis</a></li>
+<li class="chapter" data-level="2" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i><b>2</b> Abstract</a></li>
+<li class="chapter" data-level="3" data-path="zusammenfassung.html"><a href="zusammenfassung.html"><i class="fa fa-check"></i><b>3</b> Zusammenfassung</a></li>
+<li class="chapter" data-level="4" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>4</b> Introduction</a><ul>
+<li class="chapter" data-level="4.1" data-path="intro.html"><a href="intro.html#how-weather-radars-work"><i class="fa fa-check"></i><b>4.1</b> How weather radars work</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="r-radar-errors-echofalse-fig-width0-5-out-width80-fig-alignright-fig-cap-cap-cap-labelfigfigsidealized-seasonal-distribution-extreme-discharges-include-graphicsfiguresg4455-png.html"><a href="r-radar-errors-echofalse-fig-width0-5-out-width80-fig-alignright-fig-cap-cap-cap-labelfigfigsidealized-seasonal-distribution-extreme-discharges-include-graphicsfiguresg4455-png.html"><i class="fa fa-check"></i><b>5</b> <code>{r radar_errors, echo=FALSE, fig.width=0.5, out.width='80%', fig.align='right', fig.cap = cap} #  # cap &lt;- "\\label{fig:figs}Idealized seasonal distribution extreme discharges." #  # include_graphics("Figures/g4455.png") #</code></a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">PhD Thesis</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="r-radar_errors-echofalse-fig.width0.5-out.width80-fig.alignright-fig.cap-cap-cap---labelfigfigsidealized-seasonal-distribution-extreme-discharges.-include_graphicsfiguresg4455.png" class="section level1">
+<h1><span class="header-section-number">5</span> <code>{r radar_errors, echo=FALSE, fig.width=0.5, out.width='80%', fig.align='right', fig.cap = cap} #  # cap &lt;- "\\label{fig:figs}Idealized seasonal distribution extreme discharges." #  # include_graphics("Figures/g4455.png") #</code></h1>
+<p>A weather radar transmits a signal along a path called the <em>radar beam</em>, and the antenna rotates at a constant elevation angle to complete one <em>sweep</em> or <em>elevation scan</em>. The antenna makes a series of sweeps at increasing elevation angles, producing a set of nesting conical surfaces of three-dimensional data called a <em>volume scan</em>. When the radar beams encounter a backscattering target (e.g. rain drops, hail, snow, birds), some of the energy is scattered back to the radar receiver, and is then interpreted as the quantity <em>reflectivity factor</em>. This process is summarized by the radar equation <span class="citation">(Hong and Gourley <a href="#ref-hong_radar_2015">2015</a>)</span>:</p>
+<p><span class="math display">\[\begin{equation}
+    P_r = \frac{z}{r^2} \left ( \frac{P_t g^2 \theta \phi h}{\lambda^2}\right ) \left ( \frac{ \pi^3 } {1024 \ln(2)} \right ) |K|^2 l
+\end{equation}\]</span></p>
+<div class="figure"><span id="fig:figs"></span>
+<img src="_main_files/figure-html/figs-1.png" alt="plotting example" width="672" />
+<p class="caption">
+Figure 5.1: plotting example
+</p>
+</div>
+
+<div id="refs" class="references">
+<div>
+<p>Hong, Yang, and Jonathan J. Gourley. 2015. <em>Radar Hydrology: Principles, Models, and Applications</em>. CRC Press, Taylor &amp; Francis Group.</p>
+</div>
+<div>
+<p>Rinehart, Ronald. 1991. <em>Radar for Meteorologists</em>. University of North Dakota, Office of the President.</p>
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-hong_radar_2015">
+<p>Hong, Yang, and Jonathan J. Gourley. 2015. <em>Radar Hydrology: Principles, Models, and Applications</em>. CRC Press, Taylor &amp; Francis Group.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intro.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

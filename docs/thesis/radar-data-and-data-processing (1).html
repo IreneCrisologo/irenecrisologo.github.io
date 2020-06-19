@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>3 Radar data and data processing | PhD Thesis</title>
+  <meta name="description" content="my thesis">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="3 Radar data and data processing | PhD Thesis" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="my thesis" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Radar data and data processing | PhD Thesis" />
+  
+  <meta name="twitter:description" content="my thesis" />
+  
+
+<meta name="author" content="Irene Crisologo">
+
+
+<meta name="date" content="2019-04-25">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="paper-1-using-the-new-philippine-radar-network-to-reconstruct-the-habagat-of-august-2012-monsoon-event.html">
+<link rel="next" href="references.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Thesis</a></li>
+<li class="chapter" data-level="" data-path="abstract.html"><a href="abstract.html"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="" data-path="zusammenfassung.html"><a href="zusammenfassung.html"><i class="fa fa-check"></i>Zusammenfassung</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#how-weather-radars-work"><i class="fa fa-check"></i><b>1.1</b> How weather radars work</a></li>
+<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#the-good-and-the-bad"><i class="fa fa-check"></i><b>1.2</b> The good and the bad</a></li>
+<li class="chapter" data-level="1.3" data-path="intro.html"><a href="intro.html#calibration"><i class="fa fa-check"></i><b>1.3</b> Calibration</a></li>
+<li class="chapter" data-level="1.4" data-path="intro.html"><a href="intro.html#the-need-for-calibrated-radars-in-the-philippines"><i class="fa fa-check"></i><b>1.4</b> The need for (calibrated) radars in the Philippines</a></li>
+<li class="chapter" data-level="1.5" data-path="intro.html"><a href="intro.html#the-approach"><i class="fa fa-check"></i><b>1.5</b> The approach</a></li>
+<li class="chapter" data-level="1.6" data-path="intro.html"><a href="intro.html#research-questions-and-structure"><i class="fa fa-check"></i><b>1.6</b> Research questions and structure</a></li>
+<li class="chapter" data-level="1.7" data-path="intro.html"><a href="intro.html#towards-open-science"><i class="fa fa-check"></i><b>1.7</b> Towards open science</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="paper-1-using-the-new-philippine-radar-network-to-reconstruct-the-habagat-of-august-2012-monsoon-event.html"><a href="paper-1-using-the-new-philippine-radar-network-to-reconstruct-the-habagat-of-august-2012-monsoon-event.html"><i class="fa fa-check"></i><b>2</b> Paper 1: Using the new Philippine radar network to reconstruct the <em>Habagat of August 2012</em> monsoon event</a><ul>
+<li class="chapter" data-level="" data-path="paper-1-using-the-new-philippine-radar-network-to-reconstruct-the-habagat-of-august-2012-monsoon-event.html"><a href="paper-1-using-the-new-philippine-radar-network-to-reconstruct-the-habagat-of-august-2012-monsoon-event.html#abstract-1"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="2.1" data-path="paper-1-using-the-new-philippine-radar-network-to-reconstruct-the-habagat-of-august-2012-monsoon-event.html"><a href="paper-1-using-the-new-philippine-radar-network-to-reconstruct-the-habagat-of-august-2012-monsoon-event.html#introduction"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="radar-data-and-data-processing.html"><a href="radar-data-and-data-processing.html"><i class="fa fa-check"></i><b>3</b> Radar data and data processing</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">PhD Thesis</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="radar-data-and-data-processing" class="section level1">
+<h1><span class="header-section-number">3</span> Radar data and data processing</h1>
+<p>Figure <a href="#fig:BCfig1"><strong>??</strong></a> shows a map of the area around Manila Bay. Radar coverage is provided by a Doppler S-band radar based near the city of Subic. The radar device is located at 500 m a.s.l. and has a nominal range of 120 km, a range resolution of 500 m, and an angular resolution of 1<span class="math inline">\(^{\circ}\)</span>. Radar sweeps are repeated at an interval of 9 min and at 14 elevation angles (0.5<span class="math inline">\(^{\circ}\)</span>, 1.5<span class="math inline">\(^{\circ}\)</span>, 2.4<span class="math inline">\(^{\circ}\)</span>, 3.4<span class="math inline">\(^{\circ}\)</span>, 4.3<span class="math inline">\(^{\circ}\)</span>, 5.3<span class="math inline">\(^{\circ}\)</span>, 6.2<span class="math inline">\(^{\circ}\)</span>, 7.5<span class="math inline">\(^{\circ}\)</span>, 8.7<span class="math inline">\(^{\circ}\)</span>, 10<span class="math inline">\(^{\circ}\)</span>, 12<span class="math inline">\(^{\circ}\)</span>, 14<span class="math inline">\(^{\circ}\)</span>, 16.7<span class="math inline">\(^{\circ}\)</span>, and 19.5<span class="math inline">\(^{\circ}\)</span>).</p>
+<!-- ```{r BCfig2, echo=FALSE, fig.width=7,fig.height=6,fig.cap="Cumulative rainfall from 6 to 9 August for three rain gauges in Metropolitan Manila. Refer to Figure 2.1 for the position of the rain gauges. The distances between the three gauges are about 10 km."} -->
+<!-- include_graphics("Figures/BC_fig2.jpg") -->
+<!-- ``` -->
+<p>In addition, 25 rain gauges were used as ground reference. The rain gauge recordings were obtained from automatic rain gauges (ARGs) and automatic weather stations (AWSs) under Project NOAH; all instruments have a temporal resolution of 15 min.</p>
+<p>For radar data processing, the <em>wradlib</em> software <span class="citation">(Heistermann, Jacobi, and Pfaff <a href="#ref-heistermann_technical_2013">2013</a>)</span> was used. <em>wradlib</em> is an open source library for weather radar processing and allows for the most important steps of radar-based quantitative precipitation estimation (QPE). The reconstruction of rainfall depths from 6 to 9 August included all available radar sweep angles and was based on a four-step procedure (see library reference on  for further details):</p>
+
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-heistermann_technical_2013">
+<p>Heistermann, M., S. Jacobi, and T. Pfaff. 2013. “Technical Note: An Open Source Library for Processing Weather Radar Data (Wradlib).” <em>Hydrology and Earth System Sciences</em> 17 (2): 863–71. <a href="https://doi.org/10.5194/hess-17-863-2013">https://doi.org/10.5194/hess-17-863-2013</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="paper-1-using-the-new-philippine-radar-network-to-reconstruct-the-habagat-of-august-2012-monsoon-event.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
